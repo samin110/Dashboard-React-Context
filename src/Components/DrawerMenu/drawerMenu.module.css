@@ -1,0 +1,123 @@
+.drawerMenu {
+  width: 17rem;
+  height: 100vh;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  right: 5%;
+  transition: 0.3s;
+}
+
+.notDrawerMenu {
+  width: 0;
+  height: 100vh;
+  background-color: #ffffff;
+  right: 0;
+  top: 0;
+  transition: 0.3s;
+}
+
+/* Drawer Menu ===> Dashboard*/
+.container {
+  display: flex;
+  padding: 1rem 2rem 1rem 1.5rem;
+  flex-direction: column;
+  font-family: sahel;
+  width: 100%;
+  color: var(--light-text);
+}
+
+.container h1 {
+  font-size: 1.2rem;
+  font-weight: 520;
+  text-align: center;
+}
+
+.container > div {
+  margin-top: 3rem;
+}
+
+.container .links .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+  font-size: 0.9rem;
+}
+
+.container .links .title:hover {
+  color: var(--dark);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.container .links .title button {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  outline: none;
+  border: 0;
+  font-size: 1.5rem;
+  color: var(--light-text);
+  cursor: pointer;
+}
+
+.links .showSubMenu {
+  height: auto;
+  margin-right: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.showSubMenu > div {
+  margin-bottom: 0.6rem;
+  font-weight: 560;
+  font-size: 0.9rem;
+  font-family: vazir-light;
+}
+.showSubMenu > div:hover {
+  color: var(--dark);
+  cursor: pointer;
+}
+
+.notShowSubMenu {
+  height: 0;
+  display: none;
+}
+
+.links .active {
+  font-weight: bold;
+  color: var(--dark);
+}
+
+.subLink {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: 0.2s;
+}
+.subLink:hover {
+  color: var(--dark);
+}
+
+.icon {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.container .appTitle > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.6rem;
+  transition: 0.3s;
+  font-size: 0.9rem;
+  gap: 7px;
+}
+
+.container .appTitle > div:hover {
+  cursor: pointer;
+  color: var(--dark);
+  transition: 0.3s;
+}

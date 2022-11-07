@@ -1,13 +1,86 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primary: #41b983;
+  --secondary: #336aeb;
+  --dark: #283252;
+  --success: #05d69e;
+  --warning: #faad42;
+  --danger: #e62864;
+  --light-blue: #77d2f3;
+  --blue: #38c3ff;
+  --purple: #8168b1;
+  --yelloe: #ffd770;
+  --green: #94e189;
+  --pink: #ff9eb8;
+  --orange: #ffa880;
+  --red: #f82a5e;
+  --primary-gray: #cccccc;
+  --placeholder: #cfcfcf;
+  --smoke-white: #fcfcfc;
+  --sidebar-color: #f9f9f9;
+  --background-color: #f0f0f0;
+  --icon-color: #a9abac;
+  --light-text: #a2a5b9;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  position: relative;
+  background-color: var(--background-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-gray);
+  border-radius: 5px;
+}
+
+/* ///////  Font Vazir   //////// */
+@font-face {
+  font-family: vazir-bold;
+  src: url("../public/assets/Fonts/Vazir/Vazir-Bold.woff2");
+}
+@font-face {
+  font-family: vazir-light;
+  src: url("../public/assets/Fonts/Vazir/Vazir-Light.woff2");
+}
+@font-face {
+  font-family: vazir-fd;
+  src: url("../public/assets/Fonts/Vazir/Vazir-Light-FD-WOL.woff2");
+}
+
+/* ////////// Font Sahel///////////*/
+@font-face {
+  font-family: sahel;
+  src: url("../public/assets/Fonts/Sahel/Sahel.woff");
+}
+
+@font-face {
+  font-family: sahel-fd;
+  src: url("../public/assets/Fonts/Sahel/Sahel-FD.woff");
+}
+
+@font-face {
+  font-family: sahel-bold;
+  src: url("../public/assets/Fonts/Sahel/Sahel-Bold.woff");
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-text);
 }

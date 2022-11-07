@@ -1,0 +1,68 @@
+.sidebar {
+  width: 5rem;
+  overflow-y: auto;
+  height: 100vh;
+  background-color: var(--sidebar-color);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  text-align: center;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.logo {
+  width: 100%;
+  text-align: center;
+}
+.logo img {
+  width: 2.5rem;
+}
+
+.iconList {
+  display: flex;
+  flex-direction: column;
+}
+.iconList .active {
+  color: var(--primary);
+}
+
+.iconList button {
+  background-color: transparent;
+  color: var(--icon-color);
+  border: 0;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  transition: 0.3s;
+  width: 100%;
+}
+.iconList button a {
+  color: var(--icon-color);
+}
+.iconList button a:hover {
+  color: var(--primary);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebarBottomIcon {
+  margin-top: 1.5rem;
+}
+.sidebarBottomIcon .iconList li {
+  margin-top: 0.3rem;
+}
+.sidebarBottomIcon .iconList button :hover {
+  color: var(--primary);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.profileImage {
+  width: 100%;
+  text-align: center;
+}
+
+.profileImage img {
+  width: 2.5rem;
+  margin-top: 2rem;
+}

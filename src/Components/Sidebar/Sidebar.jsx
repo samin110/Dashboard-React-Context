@@ -1,0 +1,53 @@
+import React from "react";
+import styles from "./sidebar.module.css";
+import { sidebarBottomIcons, sidebarTopIcons } from "../../dummyData";
+import { useContextApp } from "../../Context/ContextApp";
+import { NavLink } from "react-router-dom";
+import DrawerMenu from "../DrawerMenu/DrawerMenu";
+
+const Sidebar = () => {
+  const { drawerMenuHandler } = useContextApp();
+
+  return (
+    <>
+      {/* START ==> Sidebar */}
+      <div className={styles.sidebar}>
+        <div className={styles.logo}>
+          <img src='./assets/Images/favicon.svg' />
+        </div>
+        <div>
+          <ul className={styles.iconList}>
+            {sidebarTopIcons.map((item) => (
+              <button key={item.name} type='button' onClick={() => drawerMenuHandler(item.name)}>
+                <NavLink to={item.name} className={({ isActive }) => (isActive ? styles.active : "")}>
+                  {item.icon}
+                </NavLink>
+              </button>
+            ))}
+          </ul>
+        </div>
+        {/* Sidebar Bottom Icon */}
+        <div className={styles.sidebarBottomIcon}>
+          <ul className={styles.iconList}>
+            {sidebarBottomIcons.map((icon, index) => (
+              <li key={index}>
+                <button type='button' onClick={() => console.log("last icon")}>
+                  {icon.name}
+                </button>
+              </li>
+            ))}
+          </ul>
+          <div className={styles.profileImage}>
+            <img src='./assets/Images/vuero-1.svg' />
+          </div>
+        </div>
+      </div>
+      {/* END ==> Sidebar */}
+
+      {/* Display drawer menu when clicked on links */}
+      <DrawerMenu />
+    </>
+  );
+};
+
+export default Sidebar;

@@ -1,0 +1,26 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  flex: 1;
+}
+
+.container_pages {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  transition: 0.3s;
+  position: fixed;
+}
+
+.navbar {
+  height: 100%;
+}
+
+.pages {
+  min-height: 100vh;
+}
