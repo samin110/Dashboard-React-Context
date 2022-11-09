@@ -15,6 +15,7 @@ import { useContextApp } from "./Context/ContextApp";
 import ListOfDataPage from "./Pages/List/ListOfData/ListOfDataPage";
 import UserProfilePage from "./Pages/UserProfile/UserProfilePage";
 import DataTablePage from "./Pages/List/DataTable/DataTablePage";
+import Navbar from "./Components/Navbar/Navbar";
 
 function App() {
   const { isShowDrawerMenu } = useContextApp();
@@ -30,11 +31,13 @@ function App() {
           className={styles.container_pages}
           style={
             isShowDrawerMenu.dashboards || isShowDrawerMenu.apps || isShowDrawerMenu.list || isShowDrawerMenu.charts
-              ? { marginRight: "22rem" }
-              : { marginRight: "6rem" }
+              ? { marginRight: "21.2rem", width: "calc(100% - 21.2rem)" }
+              : {}
           }
         >
-          <div className={styles.navbar}>navbar</div>
+          {/* <div className={styles.navbar}>
+            <Navbar />
+          </div> */}
           <div className={styles.pages}>
             <Routes>
               <Route path='/' element={<PersonalDashboardPage />} />

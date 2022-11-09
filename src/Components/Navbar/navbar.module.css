@@ -1,0 +1,89 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_button {
+  display: flex;
+  align-items: center;
+}
+.menu_button span {
+  font-family: sahel-bold;
+  font-size: 1.3rem;
+}
+.menu_button .navbar_icon {
+  color: var(--primary);
+  font-size: 1.7rem;
+  margin-left: 0.7rem;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.navbar_icon {
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: var(--icon-color);
+}
+
+.tools .navbar_icon {
+  border-radius: 100%;
+  padding: 0.4rem;
+  transition: 0.3s;
+}
+.tools button:nth-child(1) {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 0.2rem;
+  color: #ffb62e;
+}
+.tools .iran_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.tools .navbar_icon:hover,
+.tools .iran_img:hover {
+  background-color: white;
+  box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+.tools button:nth-child(3) {
+  position: relative;
+}
+
+.circle_on_top_of_bell {
+  width: 9px;
+  position: absolute;
+  height: 9px;
+  border-radius: 100%;
+  background-color: rgb(223, 0, 0);
+  top: 0;
+  left: 0;
+  animation: circle 1.8s;
+  transition: 0.3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circle {
+  from {
+    scale: 0.1;
+  }
+  to {
+    scale: 1.3;
+    opacity: 0;
+  }
+}

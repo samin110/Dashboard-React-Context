@@ -1,24 +1,21 @@
 .wrapper {
   position: relative;
-  width: 100%;
   display: flex;
+  width: 100%;
 }
 
 .sidebar {
   display: flex;
-  flex: 1;
+  z-index: 1000000;
 }
 
 .container_pages {
   display: flex;
-  width: 100%;
+  width: calc(100% - 5.1rem);
   flex-direction: column;
   transition: 0.3s;
+  margin-right: 5.1rem;
   position: fixed;
-}
-
-.navbar {
-  height: 100%;
 }
 
 .pages {
