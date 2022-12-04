@@ -1,18 +1,26 @@
 .drawerMenu {
-  width: 17rem;
+  width: 16rem;
   height: 100vh;
   background-color: #ffffff;
   position: fixed;
   top: 0;
   right: 5%;
-  transition: 0.3s;
+  transition: 0.12s linear;
 }
 
 .notDrawerMenu {
   width: 0;
-  height: 100vh;
   background-color: #ffffff;
-  transition: 0.3s;
+  transition: 0.3s linear;
+}
+
+@media screen and (max-width: 768px) {
+  .drawerMenu {
+    right: 12.7%;
+    border-right: 1px solid #ededed;
+    top: 9%;
+    z-index: 1;
+  }
 }
 
 /* Drawer Menu ===> Dashboard*/

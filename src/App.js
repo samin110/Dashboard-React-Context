@@ -16,12 +16,15 @@ import ListOfDataPage from "./Pages/List/ListOfData/ListOfDataPage";
 import UserProfilePage from "./Pages/UserProfile/UserProfilePage";
 import DataTablePage from "./Pages/List/DataTable/DataTablePage";
 import Navbar from "./Components/Navbar/Navbar";
+import MobileMenu from "./Components/MobileMenu/MobileMenu";
+import { useState } from "react";
 
 function App() {
-  const { isShowDrawerMenu } = useContextApp();
+  const { isShowDrawerMenu, setIsShowMobileSidebar } = useContextApp();
 
   return (
     <div className={styles.wrapper}>
+      <MobileMenu />
       <BrowserRouter>
         <div className={styles.sidebar}>
           <Sidebar />
@@ -35,9 +38,6 @@ function App() {
               : {}
           }
         >
-          {/* <div className={styles.navbar}>
-            <Navbar />
-          </div> */}
           <div className={styles.pages}>
             <Routes>
               <Route path='/' element={<PersonalDashboardPage />} />

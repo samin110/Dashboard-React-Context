@@ -5,6 +5,32 @@ import { motion } from "framer-motion";
 import { useContextApp } from "../../Context/ContextApp";
 import { NavLink } from "react-router-dom";
 
+// This component is for dynamic render drawer menu for apps,list,charts
+const DrawerLinks = ({ title, faTitle }) => {
+  return (
+    <div className={styles.container}>
+      <h1>{faTitle}</h1>
+      <div className={styles.appTitle}>
+        {drawerMenuApp_Data_ChartLinks
+          .filter((item) => title == item.enName)
+          .map(({ links, enName }) =>
+            links.map((link) => (
+              <NavLink
+                to={`${enName}/${link.url}`}
+                key={link.name}
+                className={styles.subLink}
+                style={({ isActive }) => ({ color: isActive && "#41b983", fontWeight: isActive && "bold" })}
+              >
+                <span className={styles.icon}>{link.icon}</span>
+                {link.name}
+              </NavLink>
+            ))
+          )}
+      </div>
+    </div>
+  );
+};
+
 const DrawerMenu = () => {
   const { isShowDrawerMenu } = useContextApp();
 
@@ -15,32 +41,6 @@ const DrawerMenu = () => {
 
   const subMenuHandler = (opened) => {
     setIsShowSubMenu({ ...isShowSubMenu, [opened]: !isShowSubMenu[opened] });
-  };
-
-  // This component is for dynamic render drawer menu for apps,list,charts
-  const DrawerLinks = ({ title, faTitle }) => {
-    return (
-      <div className={styles.container}>
-        <h1>{faTitle}</h1>
-        <div className={styles.appTitle}>
-          {drawerMenuApp_Data_ChartLinks
-            .filter((item) => title == item.enName)
-            .map(({ links, enName }) =>
-              links.map((link) => (
-                <NavLink
-                  to={`${enName}/${link.url}`}
-                  key={link.name}
-                  className={styles.subLink}
-                  style={({ isActive }) => ({ color: isActive && "#41b983", fontWeight: isActive && "bold" })}
-                >
-                  <span className={styles.icon}>{link.icon}</span>
-                  {link.name}
-                </NavLink>
-              ))
-            )}
-        </div>
-      </div>
-    );
   };
 
   return (

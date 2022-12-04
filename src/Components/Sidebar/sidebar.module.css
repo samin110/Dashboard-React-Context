@@ -11,6 +11,48 @@
   padding: 0.5rem 0 0.5rem 0;
 }
 
+@media screen and (max-width: 768px) {
+  .wrapper,
+  .logo,
+  .logo img,
+  .profileImage img,
+  .profileImage {
+    display: none;
+  }
+  .sidebar {
+    width: 4rem;
+    overflow-y: auto;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.5s;
+  }
+  .iconList li:nth-child(1) {
+    display: none;
+  }
+
+  .sidebar div:nth-child(2) {
+    margin-top: 2rem;
+  }
+  .sidebarBottomIcon {
+    margin-bottom: 1rem;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgb(0 0 0 / 30%);
+    backdrop-filter: blur(1px);
+  }
+}
+
 .logo {
   width: 100%;
   text-align: center;
@@ -47,6 +89,7 @@
 
 .sidebarBottomIcon {
   margin-top: 1.5rem;
+  position: relative;
 }
 .sidebarBottomIcon .iconList li {
   margin-top: 0.3rem;
@@ -60,6 +103,7 @@
 .profileImage {
   width: 100%;
   text-align: center;
+  cursor: pointer;
 }
 
 .profileImage img {

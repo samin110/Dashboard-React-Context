@@ -1,0 +1,107 @@
+.container_profile_info {
+  position: fixed;
+  right: 0;
+  bottom: 1%;
+  background-color: white;
+  border-radius: 5px;
+  transform: translateX(-32%);
+  width: 270px;
+  border: 1px solid #e6e6e6;
+  z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .container_profile_info {
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    transform: translateX(80%);
+    width: 270px;
+    border: 1px solid #e6e6e6;
+    bottom: -465px;
+  }
+}
+
+.profile_header {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fafafa;
+}
+.profile_header img {
+  width: 6rem;
+}
+.profile_header .info {
+  font-family: vazir-light;
+}
+.profile_header .info p:nth-child(1) {
+  font-size: 1rem;
+  color: var(--dark);
+  font-weight: bold;
+}
+.profile_header .info p:nth-child(2) {
+  font-size: 0.7rem;
+  color: var(--light-text);
+}
+
+.profile_items > div {
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 1rem;
+  margin: 0.5rem 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.profile_items > div:hover {
+  background-color: #f5f5f5;
+  transition: 0.3s;
+}
+
+.item_title p:nth-child(1) {
+  font-family: "sahel-bold";
+  font-size: 0.8rem;
+  color: var(--dark);
+}
+.item_title p:nth-child(2) {
+  font-family: vazir-light;
+  color: var(--light-text);
+  font-size: 0.75rem;
+}
+
+.item_icon {
+  font-size: 1.5rem;
+  display: flex;
+  margin-left: 0.8rem;
+  color: #2e505d;
+  font-weight: 300;
+}
+
+.exit_account {
+  padding: 1rem;
+}
+.exit_account button {
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: var(--primary);
+  border: none;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-family: vazir-light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: 0.3s;
+}
+.exit_account button:hover {
+  opacity: 0.9;
+  transition: 0.3s;
+  box-shadow: 0 10px 26px -12px var(--primary);
+}
+
+.exit_account button span:nth-child(1) {
+  display: flex;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}

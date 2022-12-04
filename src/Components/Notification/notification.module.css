@@ -1,0 +1,68 @@
+.notification {
+  position: absolute;
+  /* display: none; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 320px;
+  z-index: 2;
+  top: 140%;
+  left: 0;
+  transform: translateX(-16%);
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+}
+.notification_title {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: vazir-light;
+  padding: 0.8rem;
+  font-weight: bold;
+}
+.notification div:nth-child(1) p:nth-child(1) {
+  font-size: 0.8rem;
+  color: var(--light-text);
+}
+.notification div:nth-child(1) p:nth-child(2) {
+  font-size: 0.75rem;
+  color: var(--primary);
+  letter-spacing: 1px;
+}
+
+.container_notif_message > div {
+  cursor: pointer;
+  margin: 0.8rem 0;
+  padding: 0 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.container_notif_message > div .information_message p:nth-child(1) {
+  font-family: vazir-light;
+  font-size: 0.7rem;
+  color: var(--dark);
+}
+
+.container_notif_message > div .information_message p:nth-child(1) span {
+  font-weight: bold;
+}
+
+.container_notif_message > div .information_message p:nth-child(2) {
+  color: var(--light-text);
+  letter-spacing: 0.5px;
+  font-family: vazir-fd;
+  font-size: 0.7rem;
+  text-align: right;
+}
+.profile_user img {
+  width: 2.7rem;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .notification {
+    width: 95vw;
+    border: 2px solid #e6e6e6;
+  }
+}

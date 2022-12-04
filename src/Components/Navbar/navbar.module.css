@@ -5,6 +5,12 @@
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .navbar {
+    margin-top: 4.2rem;
+  }
+}
+
 .menu_button {
   display: flex;
   align-items: center;
@@ -17,6 +23,15 @@
   color: var(--primary);
   font-size: 1.7rem;
   margin-left: 0.7rem;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    margin-top: 4.2rem;
+  }
+  .menu_button .navbar_icon {
+    display: none;
+  }
 }
 
 .tools {
@@ -60,7 +75,9 @@
   box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
   transition: 0.3s;
 }
-
+.navbar_icon > div:nth-child(1) {
+  display: flex;
+}
 .tools button:nth-child(3) {
   position: relative;
 }
@@ -78,6 +95,12 @@
   animation-iteration-count: infinite;
 }
 
+@media screen and (max-width: 768px) {
+  .circle_on_top_of_bell,
+  .tools button:nth-child(3) {
+    display: none;
+  }
+}
 @keyframes circle {
   from {
     scale: 0.1;
