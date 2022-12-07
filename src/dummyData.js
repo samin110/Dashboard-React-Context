@@ -319,3 +319,221 @@ export const columnChartData = {
     },
   },
 };
+
+export const lineChartDataAnalyticts = {
+  series: [
+    {
+      name: "عایدی",
+      data: [10835, 40214, 36257, 51411, 45697, 61221, 65295, 91512, 75648],
+    },
+  ],
+  options: {
+    chart: {
+      fontFamily: "vazir-fd",
+      toolbar: {
+        show: false,
+      },
+
+      height: 350,
+      type: "line",
+      zoom: {
+        enabled: false,
+      },
+    },
+    theme: {
+      mode: "light",
+      palette: "palette5",
+      monochrome: {
+        enabled: true,
+        color: "#90EE7E",
+        shadeTo: "light",
+        shadeIntensity: 0.65,
+      },
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    stroke: {
+      curve: "smooth",
+      width: 2,
+    },
+    grid: {
+      show: true,
+    },
+    yaxis: {
+      opposite: true,
+    },
+    xaxis: {
+      categories: ["اسفند", "بهمن", "دی", "آذر", "آبان", "مهر", "شهریور", "مرداد", "تیر"],
+    },
+    tooltip: {
+      y: {
+        formatter: function (val) {
+          return val + " " + "$";
+        },
+      },
+    },
+  },
+};
+
+export const circleChartData = {
+  series: [86, 57],
+  options: {
+    stroke: {
+      show: true,
+      width: 0.5,
+    },
+
+    colors: ["#a2e499", "#9c9ef3"],
+    chart: {
+      height: 350,
+      type: "radialBar",
+      fontFamily: "vazir-fd",
+    },
+    plotOptions: {
+      radialBar: {
+        startAngle: -140,
+        endAngle: 140,
+        track: {
+          strokeWidth: "100%",
+        },
+        hollow: {
+          margin: 5,
+          size: "70%",
+        },
+        dataLabels: {
+          name: {
+            fontSize: "10px",
+          },
+          value: {
+            fontSize: "13px",
+            fontFamily: "vazir-fd",
+          },
+          total: {
+            show: true,
+            label: "مجموع",
+            formatter: function (w) {
+              // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
+              return "71.5%";
+            },
+          },
+        },
+      },
+    },
+    labels: ["کارایی", "سودمندی"],
+  },
+};
+
+export const offSectioncircleChartData = {
+  series: [65],
+  options: {
+    stroke: {
+      show: true,
+      width: 0.5,
+    },
+
+    colors: ["#989af3"],
+    chart: {
+      height: 350,
+      type: "radialBar",
+      fontFamily: "vazir-fd",
+    },
+    plotOptions: {
+      radialBar: {
+        startAngle: 0,
+        endAngle: 360,
+        track: {
+          strokeWidth: "100%",
+        },
+        hollow: {
+          margin: 5,
+          size: "75%",
+        },
+        dataLabels: {
+          name: {
+            fontSize: "10px",
+          },
+          value: {
+            fontSize: "13px",
+            fontFamily: "vazir-fd",
+          },
+          total: {
+            show: true,
+            label: "رشد",
+            formatter: function (w) {
+              // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
+              return "65%";
+            },
+          },
+        },
+      },
+    },
+  },
+};
+
+export const columnChartAnalytics = {
+  series: [
+    {
+      name: "سوددهی اخیر",
+      data: [-4, -10, -7, -12, -9, -14, -31, -15, -26].reverse(),
+    },
+    {
+      name: "عایدی",
+      data: [24, 44, 21, 35, 17, 28, 31, 15, 6].reverse(),
+    },
+    {
+      name: "نقدینگی",
+      data: [-35, -41, -36, -26, -45, -48, -52, -53, -41],
+    },
+  ],
+  options: {
+    chart: {
+      fontFamily: "vazir-fd",
+      toolbar: {
+        show: false,
+      },
+      type: "bar",
+      height: 350,
+    },
+    plotOptions: {
+      bar: {
+        horizontal: false,
+        columnWidth: "55%",
+        endingShape: "rounded",
+      },
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    legend: {
+      position: "top",
+    },
+    stroke: {
+      show: true,
+      width: 2,
+      colors: ["transparent"],
+    },
+    xaxis: {
+      categories: ["اسفند", "بهمن", "دی", "آذر", "آبان", "مهر", "شهریور", "مرداد", "تیر"],
+    },
+    colors: ["#797bf2", "#8168b1", "#94e189"],
+    yaxis: {
+      opposite: true,
+      labels: {
+        formatter: function (y) {
+          return y - 10;
+        },
+      },
+    },
+    fill: {
+      opacity: 1,
+    },
+    tooltip: {
+      y: {
+        formatter: function (val) {
+          return val;
+        },
+      },
+    },
+  },
+};
