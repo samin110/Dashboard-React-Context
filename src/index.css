@@ -85,6 +85,15 @@ a {
   color: var(--light-text);
 }
 
+/* Btn */
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: vazir-light;
+}
+/* Btn */
+
 /* Calenadr Analytics page */
 
 .custom-calendar {

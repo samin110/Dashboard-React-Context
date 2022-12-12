@@ -7,11 +7,15 @@ import DrawerMenu from "../DrawerMenu/DrawerMenu";
 import UserProfile from "../UserProfile/UserProfile";
 
 const Sidebar = () => {
-  const { drawerMenuHandler, isShowMobileSidebar } = useContextApp();
+  const { drawerMenuHandler, isShowMobileSidebar, setIsShowMobileSidebar } = useContextApp();
   const [isShowProfile, setIsShowProfile] = useState(false);
 
   return (
-    <div className={styles.wrapper} style={isShowMobileSidebar ? { display: "block" } : {}}>
+    <div
+      className={styles.wrapper}
+      style={isShowMobileSidebar ? { display: "block" } : {}}
+      onBlur={() => setIsShowMobileSidebar(false)}
+    >
       {/* START ==> Sidebar */}
       <div className={styles.sidebar}>
         <div className={styles.logo}>

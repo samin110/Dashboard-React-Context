@@ -20,7 +20,7 @@ import MobileMenu from "./Components/MobileMenu/MobileMenu";
 import { useState } from "react";
 
 function App() {
-  const { isShowDrawerMenu, setIsShowMobileSidebar } = useContextApp();
+  const { isShowDrawerMenu } = useContextApp();
 
   return (
     <div className={styles.wrapper}>

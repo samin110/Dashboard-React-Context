@@ -5,7 +5,6 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { VscChromeClose } from "react-icons/vsc";
 import { useContextApp } from "../../Context/ContextApp";
 import { motion } from "framer-motion";
-import { useState } from "react";
 import { Notification } from "../Notification/Notification";
 import UserProfile from "../UserProfile/UserProfile";
 

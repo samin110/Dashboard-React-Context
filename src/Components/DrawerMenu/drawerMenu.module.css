@@ -5,11 +5,15 @@
   position: fixed;
   top: 0;
   right: 5%;
-  transition: 0.12s linear;
+  /* transform: translateX(-80px); */
+  /*  ++++++ Tips ====>>> We can use transform instead of width +++++++ */
+  transition: 0.2s linear;
 }
 
 .notDrawerMenu {
   width: 0;
+  /*  ++++++ Tips ====>>> We can use transform instead of width +++++++ */
+  /* transform: translateX(300px); */
   background-color: #ffffff;
   transition: 0.3s linear;
 }

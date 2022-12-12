@@ -273,7 +273,7 @@ const PersonalDashboardPage = () => {
               {myTaskList.map((task) => (
                 <div className={styles.today_task_list} key={task.taskTitle}>
                   <div>
-                    <input type='checkbox' id='first-task' />
+                    <input type='checkbox' id='first-task' className={styles.today_task_checkbox} />
                   </div>
                   <div className={styles.project_title}>
                     <p style={{ fontSize: "0.8rem" }}>{task.taskTitle}</p>

@@ -1,0 +1,133 @@
+.container {
+  background: white;
+  width: 95%;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  align-items: center;
+  position: relative;
+  height: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.multi_tags {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search_icon {
+  display: flex;
+  align-items: center;
+  color: var(--placeholder);
+  font-size: 1.2rem;
+  margin-left: 0.3rem;
+}
+
+.close_values,
+.caret_icon {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+}
+
+.close_values {
+  font-size: 1.2rem;
+  color: #999999;
+  transition: 0.2s;
+  margin-left: 0.1rem;
+}
+.close_values:hover {
+  color: #1f2937;
+  transition: 0.2s;
+}
+.selected_tags {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.selected_tag {
+  font-family: vazir-light;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  background-color: #e7eaf3;
+  width: fit-content;
+  border-radius: 5px;
+  padding-right: 0.4rem;
+}
+
+.selected_tag_title {
+  width: max-content;
+}
+
+.caret_icon {
+  color: #aeaeae;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.delete_tag {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0.2rem;
+  display: flex;
+  margin-right: 0.2rem;
+  font-size: 0.9rem;
+  color: #4e5772;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.delete_tag:hover {
+  background-color: #d9dbe4;
+}
+
+.input_tags {
+  font-size: 0.8rem;
+  font-family: vazir-light;
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 100%;
+}
+
+.options {
+  position: absolute;
+  top: calc(100% + 0.1rem);
+  left: 0;
+  background: white;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+}
+
+.option {
+  font-family: vazir-light;
+  font-size: 0.81rem;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  transition: 0.3s;
+  color: #000;
+}
+
+.option:hover {
+  transition: 0.3s;
+  background-color: #f1f3f8;
+  border-radius: 8px;
+}
+
+.animation {
+  transition: 0.2s;
+  transform: rotatez(180deg);
+}

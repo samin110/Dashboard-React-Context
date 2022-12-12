@@ -196,6 +196,56 @@ export const notificationData = [
   },
   { username: "ملانی", notification: "یک کامنت گذاشت.", time: "3 ساعت پیش", image_url: "./assets/Images/23.jpg" },
 ];
+
+export const jobFeatureData = [
+  {
+    title: "نوع استخدامی",
+    features: [
+      { subject: "شغل های تمام وقت ", quantity: 56 },
+      { subject: "شغل های پاره وقت", quantity: 43 },
+      { subject: "موقعیت های دورکاری", quantity: 24 },
+      { subject: "موقعیت های کارورزی", quantity: 27 },
+      { subject: "پیمانکاری", quantity: 76 },
+      { subject: "مهارت آموزی", quantity: 28 },
+    ],
+  },
+  {
+    title: "سطح شغلی",
+    features: [
+      { subject: "سطح دانشجویی", quantity: 98 },
+      { subject: "سطح تازه وارد", quantity: 44 },
+      { subject: "سطح متوسط", quantity: 35 },
+      { subject: "سطح ارشد", quantity: 29 },
+      { subject: "مدیران", quantity: 26 },
+      { subject: "سطح دانشجویی", quantity: 56 },
+    ],
+  },
+  {
+    title: "بازه حقوق",
+    features: [
+      { subject: "3 میلیون - 5 میلیون", quantity: 56 },
+      { subject: "5 میلیون - 7 میلیون", quantity: 43 },
+      { subject: "7 میلیون - 10 میلیون", quantity: 24 },
+      { subject: "10 میلیون - 15 میلیون", quantity: 27 },
+      { subject: "15 میلیون - 20 میلیون", quantity: 76 },
+      { subject: "20 میلیون - 25 میلیون", quantity: 28 },
+      { subject: "25 میلیون - 30 میلیون", quantity: 28 },
+    ],
+  },
+];
+
+export const jobPositionsCardsData = [
+  { img_url: "./assets/Images/airbnb.svg", title: "طراح رابط کاربری و تجربه کاربری" },
+  { img_url: "./assets/Images/atlassian.svg", title: "طراح محصول ارشد" },
+  { img_url: "./assets/Images/dribbble.svg", title: "طراح رابط کاربری و تجربه کاربری" },
+  { img_url: "./assets/Images/facebook.svg", title: "طراح محصول" },
+  { img_url: "./assets/Images/github.svg", title: "طراح رابط کاربری و تجربه کاربری" },
+  { img_url: "./assets/Images/gitlab.svg", title: "توسعه دهنده وب" },
+  { img_url: "./assets/Images/google.svg", title: "طراح رابط کاربری" },
+  { img_url: "./assets/Images/slack.svg", title: "طراح رابط کاربری و تجربه کاربری" },
+  { img_url: "./assets/Images/tnw.svg", title: "طراح رابط کاربری و تجربه کاربری" },
+];
+
 // Data For Charts
 export const AreaChartData = {
   options: {

@@ -57,6 +57,7 @@ const ContextApp = ({ children }) => {
         isShowProfile,
         showNotificationHandler,
         showProfileHandler,
+        setIsShowMobileSidebar,
       }}
     >
       {children}
