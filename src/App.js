@@ -1,23 +1,14 @@
 import Sidebar from "./Components/Sidebar/Sidebar";
 import styles from "./app.module.css";
-import { BrowserRouter, Routes, Route, Router, NavLink, Navigate } from "react-router-dom";
-import ShopDashboardPage from "./Pages/Dashboards/Shop/ShopDashboardPage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PersonalDashboardPage from "./Pages/Dashboards/Personal/PersonalDashboardPage";
 import AnalyticsDashboardPage from "./Pages/Dashboards/Analytics/AnalyticsDashboardPage";
 import HiringDashboardPage from "./Pages/Dashboards/Hiring/HiringDashboardPage";
 import HRDashboardPage from "./Pages/Dashboards/HumanResources/HRDashboardPage";
-import VideoDashboardPage from "./Pages/Dashboards/LifeStyle/Video/VideoDashboardPage";
-import FootballDashboardPage from "./Pages/Dashboards/LifeStyle/Football/FootbalDashboardPage";
-import ChatPage from "./Pages/Apps/Chat/ChatPage";
-import MapPage from "./Pages/Apps/Map/MapPage";
-import AccountingPage from "./Pages/Apps/Accounting/AccountingPage";
+
 import { useContextApp } from "./Context/ContextApp";
-import ListOfDataPage from "./Pages/List/ListOfData/ListOfDataPage";
-import UserProfilePage from "./Pages/UserProfile/UserProfilePage";
-import DataTablePage from "./Pages/List/DataTable/DataTablePage";
-import Navbar from "./Components/Navbar/Navbar";
+
 import MobileMenu from "./Components/MobileMenu/MobileMenu";
-import { useState } from "react";
 
 function App() {
   const { isShowDrawerMenu } = useContextApp();
