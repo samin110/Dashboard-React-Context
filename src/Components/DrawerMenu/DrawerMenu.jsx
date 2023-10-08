@@ -51,7 +51,7 @@ const DrawerMenu = () => {
             <h1>داشبوردها</h1>
             <div className={styles.links}>
               <NavLink
-                to='/dashboards/personal'
+                to='/'
                 className={styles.title}
                 style={({ isActive }) => ({ color: isActive && "#41b983", fontWeight: isActive && "bold" })}
               >
@@ -73,7 +73,7 @@ const DrawerMenu = () => {
                     <div className={isShowSubMenu[item.enName] ? styles.showSubMenu : styles.notShowSubMenu}>
                       {item.subTitle.map((title) => (
                         <NavLink
-                          to={`/dashboards/${title.url}`}
+                          to={`${title.url}`}
                           className={styles.subLink}
                           style={({ isActive }) => ({ color: isActive && "#41b983", fontWeight: isActive && "bold" })}
                         >
@@ -86,19 +86,19 @@ const DrawerMenu = () => {
                 ))}
               </div>
 
-              <NavLink
+              {/* <NavLink
                 to='dashboards/shop'
                 className={styles.title}
                 style={({ isActive }) => ({ color: isActive && "#41b983", fontWeight: isActive && "bold" })}
               >
                 فروشگاه
-              </NavLink>
+              </NavLink> */}
             </div>
           </div>
         )}
       </div>
 
-      <div className={isShowDrawerMenu.apps ? styles.drawerMenu : styles.notDrawerMenu}>
+      {/* <div className={isShowDrawerMenu.apps ? styles.drawerMenu : styles.notDrawerMenu}>
         {isShowDrawerMenu.apps && <DrawerLinks title='apps' faTitle='اپلیکیشن ها' />}
       </div>
       <div className={isShowDrawerMenu.list ? styles.drawerMenu : styles.notDrawerMenu}>
@@ -106,7 +106,7 @@ const DrawerMenu = () => {
       </div>
       <div className={isShowDrawerMenu.charts ? styles.drawerMenu : styles.notDrawerMenu}>
         {isShowDrawerMenu.charts && <DrawerLinks title='charts' faTitle='چارت ها' />}
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -7,7 +7,7 @@
   right: 5%;
   /* transform: translateX(-80px); */
   /*  ++++++ Tips ====>>> We can use transform instead of width +++++++ */
-  transition: 0.2s linear;
+  transition: 0.2s ease;
 }
 
 .notDrawerMenu {
@@ -15,7 +15,7 @@
   /*  ++++++ Tips ====>>> We can use transform instead of width +++++++ */
   /* transform: translateX(300px); */
   background-color: #ffffff;
-  transition: 0.3s linear;
+  transition: 0.2s ease;
 }
 
 @media screen and (max-width: 768px) {

@@ -74,6 +74,7 @@
 
   .field {
     border-left: none;
+    padding-bottom: 1rem;
   }
 
   .padding_field {

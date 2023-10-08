@@ -24,8 +24,14 @@ const Sidebar = () => {
         <div>
           <ul className={styles.iconList}>
             {sidebarTopIcons.map((item) => (
-              <button key={item.name} type='button' onClick={() => drawerMenuHandler(item.name)}>
-                <NavLink to={item.name} className={({ isActive }) => (isActive ? styles.active : "")}>
+              <button
+                key={item.name}
+                type='button'
+                onClick={() => drawerMenuHandler(item.name)}
+                disabled={item.url === "#"}
+                style={item.name === "#" ? { pointerEvents: "none" } : {}}
+              >
+                <NavLink to={item.url} className={({ isActive }) => (isActive ? styles.active : "")}>
                   {item.icon}
                 </NavLink>
               </button>

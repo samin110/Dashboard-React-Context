@@ -1,6 +1,6 @@
 import Sidebar from "./Components/Sidebar/Sidebar";
 import styles from "./app.module.css";
-import { BrowserRouter, Routes, Route, Router, NavLink } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Router, NavLink, Navigate } from "react-router-dom";
 import ShopDashboardPage from "./Pages/Dashboards/Shop/ShopDashboardPage";
 import PersonalDashboardPage from "./Pages/Dashboards/Personal/PersonalDashboardPage";
 import AnalyticsDashboardPage from "./Pages/Dashboards/Analytics/AnalyticsDashboardPage";
@@ -41,11 +41,11 @@ function App() {
           <div className={styles.pages}>
             <Routes>
               <Route path='/' element={<PersonalDashboardPage />} />
-              <Route path='/dashboards'>
+              <Route path='/analytics' element={<AnalyticsDashboardPage />} />
+              <Route path='/hiring' element={<HiringDashboardPage />} />
+              <Route path='/human-resource' element={<HRDashboardPage />} />
+              {/* <Route path='/dashboards'>
                 <Route path='personal' element={<PersonalDashboardPage />} />
-                <Route path='analytics' element={<AnalyticsDashboardPage />} />
-                <Route path='hiring' element={<HiringDashboardPage />} />
-                <Route path='human-resource' element={<HRDashboardPage />} />
                 <Route path='video' element={<VideoDashboardPage />} />
                 <Route path='football' element={<FootballDashboardPage />} />
                 <Route path='shop' element={<ShopDashboardPage />} />
@@ -59,7 +59,7 @@ function App() {
                 <Route path='list-of-data' element={<ListOfDataPage />} />
                 <Route path='data-table' element={<DataTablePage />} />
                 <Route path='user-profile' element={<UserProfilePage />} />
-              </Route>
+              </Route> */}
               <Route>{/* Charts */}</Route>
             </Routes>
           </div>

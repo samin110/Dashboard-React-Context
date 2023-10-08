@@ -26,6 +26,20 @@ body {
   position: relative;
   background-color: var(--background-color);
 }
+.animation {
+  animation: fadeLeft 0.3s;
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 * {
   margin: 0;
@@ -83,6 +97,18 @@ li {
 a {
   text-decoration: none;
   color: var(--light-text);
+}
+
+h3 {
+  font-family: sahel-bold;
+  font-size: 0.9rem;
+}
+/* Link (a) */
+.link {
+  color: var(--primary);
+  border-bottom: 1px dotted var(--primary);
+  font-family: vazir-bold;
+  font-size: 0.85rem;
 }
 
 /* Btn */

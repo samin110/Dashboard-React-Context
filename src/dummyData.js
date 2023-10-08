@@ -13,11 +13,11 @@ import { CgProfile } from "react-icons/cg";
 import { GiChart } from "react-icons/gi";
 
 export const sidebarTopIcons = [
-  { name: "dashboards", icon: <MdSpaceDashboard /> },
-  { name: "apps", icon: <AiOutlineAppstore /> },
-  { name: "list", icon: <HiOutlineCube /> },
-  { name: "charts", icon: <BsCpu /> },
-  { name: "chat", icon: <TbMessageCircle2 /> },
+  { url: "/", name: "dashboards", icon: <MdSpaceDashboard /> },
+  { name: "#", icon: <AiOutlineAppstore /> },
+  { name: "#", icon: <HiOutlineCube /> },
+  { name: "#", icon: <BsCpu /> },
+  { name: "#", icon: <TbMessageCircle2 /> },
 ];
 
 export const sidebarBottomIcons = [{ name: <BsLayoutSidebar /> }, { name: <BsSearch /> }, { name: <FiSettings /> }];
@@ -31,37 +31,37 @@ export const drawerMenuDashboardsLinks = [
       {
         icon: <IoAnalyticsOutline />,
         name: "تجزیه و تحلیل",
-        url: "analytics",
+        url: "/analytics",
       },
       {
         icon: <MdOutlineWorkOutline />,
         name: "استخدام",
-        url: "hiring",
+        url: "/hiring",
       },
       {
         icon: <MdPersonSearch />,
         name: " منابع انسانی",
-        url: "human-resource",
+        url: "/human-resource",
       },
     ],
   },
-  {
-    faName: "سرگرمی",
-    enName: "hobby",
-    icon: <BiChevronLeft />,
-    subTitle: [
-      {
-        icon: <BiVideo />,
-        name: "ویدیو",
-        url: "video",
-      },
-      {
-        icon: <IoFootball />,
-        name: "فوتبال",
-        url: "football",
-      },
-    ],
-  },
+  // {
+  //   faName: "سرگرمی",
+  //   enName: "hobby",
+  //   icon: <BiChevronLeft />,
+  //   subTitle: [
+  //     {
+  //       icon: <BiVideo />,
+  //       name: "ویدیو",
+  //       url: "video",
+  //     },
+  //     {
+  //       icon: <IoFootball />,
+  //       name: "فوتبال",
+  //       url: "football",
+  //     },
+  //   ],
+  // },
 ];
 
 export const drawerMenuApp_Data_ChartLinks = [
@@ -246,6 +246,37 @@ export const jobPositionsCardsData = [
   { img_url: "./assets/Images/tnw.svg", title: "طراح رابط کاربری و تجربه کاربری" },
 ];
 
+export const recentRookiesUsersData = [
+  {
+    big_image: "./assets/Images/13.jpg",
+    small_image: "./assets/Images/illustrator.svg",
+    name: "تارا خاشقچی",
+    job_field: "طراح رابط کاربری و تجربه کاربری",
+    status_btn: "استخدام",
+  },
+  {
+    big_image: "./assets/Images/37.jpg",
+    small_image: "./assets/Images/france.svg",
+    name: "اریک",
+    job_field: "مدیر محصول",
+    status_btn: "بررسی",
+  },
+  {
+    big_image: "./assets/Images/25.jpg",
+    small_image: "./assets/Images/js.svg",
+    name: "ملانی",
+    job_field: "توسعه دهنده‌ی وب",
+    status_btn: "بررسی",
+  },
+];
+
+export const hrTaskData = [
+  { subject: "تماس با مایک", time: "در 8:30 صبح" },
+  { subject: "تمام کردن بررسی مستندات", time: "در 11:30 صبح" },
+  { subject: "ملاقات در خصوص پروژه", time: "در 12:00 ب.ظ" },
+  { subject: "ملاقات با رضوان", time: "در 3:00 ب.ظ" },
+  { subject: "بازبینی پیش‌نویس پایانی", time: "در 6:00 ب.ظ" },
+];
 // Data For Charts
 export const AreaChartData = {
   options: {
